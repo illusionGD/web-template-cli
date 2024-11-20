@@ -1,0 +1,37 @@
+{
+    "name": "web-template-cli",
+    "version": "1.0.0",
+    "description": "web 模板脚手架",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "rimraf dist && rollup -c rollup.config.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bin": {
+        "web-template-cli": "./dist/index.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.26.0",
+        "@babel/preset-env": "^7.26.0",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^28.0.1",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.3.0",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^12.1.1",
+        "@types/node": "^22.9.1",
+        "rimraf": "^6.0.1",
+        "rollup": "^4.27.3",
+        "tslib": "^2.8.1",
+        "typescript": "^5.6.3"
+    },
+    "dependencies": {
+        "commander": "^12.1.0",
+        "download-git-repo": "^3.0.2",
+        "inquirer": "12.1.0"
+    }
+}
